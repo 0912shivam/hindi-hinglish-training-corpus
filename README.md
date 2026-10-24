@@ -307,20 +307,6 @@ Key engineering trade-offs documented in [`DECISIONS.md`](DECISIONS.md):
 
 ---
 
-## Submission Notes
-
-- **Repository Cleanliness**: As per assignment instructions, the repository **excludes the full raw dataset** (`data/raw/`), virtual environment (`.venv/`), and runtime state databases (`*.sqlite`).
-- **Required Deliverables Included**:
-  - `download.sh` and `run.sh` entrypoints
-  - Full modular Python implementation under `src/`
-  - Automated unit test suite under `tests/`
-  - Complete `DECISIONS.md` rationale
-  - `output/eval.jsonl` (200 held-out evaluation documents)
-  - `output/clean/sample_1000.jsonl.gz` (exactly 1,000 deterministic sample rows)
-  - `output/contamination.jsonl`, `output/manifest.json`, and `output/ledger.jsonl.gz`
-
----
-
 ## Tech Stack
 
 The pipeline relies strictly on standard Python libraries and minimal pinned production dependencies:
