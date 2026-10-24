@@ -1,0 +1,10 @@
+[
+  {
+    "path": "sangraha_hindi\\wiki_hin_Deva_0000_of_0063.parquet",
+    "sha256": "40eee3b27477ec1925edcb5526ba42b4b03d8378770132b8a1db39d87c136aaa"
+  },
+  {
+    "path": "phinc\\PHINC.csv",
+    "sha256": "325ba383cd6d73e0c3128885e2a79133e612ec03d18c8b55506d0b4b12ec68ed"
+  }
+]

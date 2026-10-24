@@ -1,0 +1,27 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+
+# Raw dataset (explicitly excluded as per assignment instructions)
+data/raw/
+data/raw/*
+
+# Temporary / runtime state and databases
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+output/*.sqlite
+output/*.sqlite-wal
+output/*.sqlite-shm
+run_*/
+
+# Full 100k+ clean training corpus (only 1,000-row sample and eval set are committed to git)
+output/clean/train.jsonl.gz

@@ -1,0 +1,178 @@
+{
+  "pipeline_version": "0.1.0",
+  "created_at_utc": "2026-10-24T14:27:53.179169+00:00",
+  "source_metadata": [
+    {
+      "name": "AI4Bharat Sangraha Hindi",
+      "url": "https://huggingface.co/datasets/ai4bharat/sangraha/resolve/main/synthetic/hin_Deva/wiki_hin_Deva_0000_of_0063.parquet",
+      "license": "CC BY 4.0",
+      "download_date": "2026-10-24",
+      "local_path": "data/raw/sangraha_hindi/wiki_hin_Deva_0000_of_0063.parquet",
+      "notes": "Sangraha synthetic Hindi Devanagari shard"
+    },
+    {
+      "name": "PHINC Hinglish",
+      "url": "https://huggingface.co/datasets/LingoIITGN/PHINC/resolve/main/PHINC.csv",
+      "license": "CC BY 4.0",
+      "download_date": "2026-10-24",
+      "local_path": "data/raw/phinc/PHINC.csv",
+      "notes": "PHINC Hinglish source file"
+    }
+  ],
+  "raw_input_hashes": [
+    {
+      "path": "phinc\\PHINC.csv",
+      "sha256": "325ba383cd6d73e0c3128885e2a79133e612ec03d18c8b55506d0b4b12ec68ed",
+      "size_bytes": 2125039
+    },
+    {
+      "path": "sangraha_hindi\\wiki_hin_Deva_0000_of_0063.parquet",
+      "sha256": "40eee3b27477ec1925edcb5526ba42b4b03d8378770132b8a1db39d87c136aaa",
+      "size_bytes": 257258473
+    }
+  ],
+  "output_counts": {
+    "input_records": 103975,
+    "parsed_records": 103975,
+    "final_training_records": 103483,
+    "ledger_rows": 103975,
+    "malformed_record_count": 0,
+    "eval_count": 200
+  },
+  "counts_per_language": {
+    "en": 274,
+    "hi-Latn": 12355,
+    "other": 996,
+    "hi": 89858
+  },
+  "counts_by_stage": {
+    "eval": 200,
+    "exact_dedup": 15,
+    "kept": 103483,
+    "near_dedup": 65,
+    "quality": 212
+  },
+  "counts_stage_by_language": {
+    "eval": {
+      "en": 2,
+      "hi": 160,
+      "hi-Latn": 30,
+      "other": 8
+    },
+    "exact_dedup": {
+      "en": 1,
+      "hi": 13,
+      "hi-Latn": 1
+    },
+    "kept": {
+      "en": 274,
+      "hi": 89858,
+      "hi-Latn": 12355,
+      "other": 996
+    },
+    "near_dedup": {
+      "en": 2,
+      "hi": 22,
+      "hi-Latn": 39,
+      "other": 2
+    },
+    "quality": {
+      "hi": 190,
+      "hi-Latn": 17,
+      "other": 5
+    }
+  },
+  "counts_by_source": {
+    "phinc": 13738,
+    "sangraha_hindi": 90237
+  },
+  "thresholds": {
+    "quality": {
+      "min_meaningful_chars": 3,
+      "max_url_ratio": 0.35,
+      "max_symbol_ratio": 0.4,
+      "max_punct_ratio": 0.55,
+      "max_replacement_char_count": 3,
+      "max_repeat_run": 12,
+      "max_markup_ratio": 0.3,
+      "min_alpha_or_indic_ratio": 0.2
+    },
+    "language": {
+      "min_chars": 8,
+      "devanagari_ratio_hi": 0.45,
+      "latin_ratio_en": 0.7,
+      "latin_ratio_hilatn": 0.55,
+      "min_hi_lexical_hits": 1,
+      "min_en_lexical_hits": 2
+    },
+    "near_dedup": {
+      "shingle_size": 3,
+      "num_perm": 64,
+      "lsh_threshold": 0.82,
+      "verify_threshold": 0.86,
+      "max_chars_for_shingles": 2000,
+      "max_tokens_for_shingles": 200
+    },
+    "contamination_near_threshold": 0.9
+  },
+  "dedup": {
+    "exact_dedup_count": 15,
+    "near_dedup_count": 65,
+    "near_dedup_threshold": 0.86
+  },
+  "contamination": {
+    "exact": 0,
+    "normalized": 0,
+    "near_duplicate": 0,
+    "cross_script": 0,
+    "affected_eval_items": 0
+  },
+  "pii": {
+    "total_redactions": 12
+  },
+  "random_sample_seed": 20261024,
+  "configuration": {
+    "version": "0.1.0",
+    "unicode_form": "NFKC",
+    "deterministic_seed": 20261024,
+    "language": {
+      "min_chars": 8,
+      "devanagari_ratio_hi": 0.45,
+      "latin_ratio_en": 0.7,
+      "latin_ratio_hilatn": 0.55,
+      "min_hi_lexical_hits": 1,
+      "min_en_lexical_hits": 2
+    },
+    "quality": {
+      "min_meaningful_chars": 3,
+      "max_url_ratio": 0.35,
+      "max_symbol_ratio": 0.4,
+      "max_punct_ratio": 0.55,
+      "max_replacement_char_count": 3,
+      "max_repeat_run": 12,
+      "max_markup_ratio": 0.3,
+      "min_alpha_or_indic_ratio": 0.2
+    },
+    "near_dedup": {
+      "shingle_size": 3,
+      "num_perm": 64,
+      "lsh_threshold": 0.82,
+      "verify_threshold": 0.86,
+      "max_chars_for_shingles": 2000,
+      "max_tokens_for_shingles": 200
+    },
+    "eval": {
+      "holdout_size": 200,
+      "random_seed": 20261024,
+      "min_hilatn_target": 30
+    }
+  },
+  "artifacts": {
+    "clean": "clean/train.jsonl.gz",
+    "ledger": "ledger.jsonl.gz",
+    "eval": "eval.jsonl",
+    "contamination": "contamination.jsonl",
+    "sample_1000": "clean/sample_1000.jsonl.gz",
+    "near_threshold_examples": "near_threshold_examples.jsonl"
+  }
+}

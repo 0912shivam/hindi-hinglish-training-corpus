@@ -1,0 +1,18 @@
+[
+  {
+    "name": "AI4Bharat Sangraha Hindi",
+    "url": "https://huggingface.co/datasets/ai4bharat/sangraha/resolve/main/synthetic/hin_Deva/wiki_hin_Deva_0000_of_0063.parquet",
+    "license": "CC BY 4.0",
+    "download_date": "2026-10-24",
+    "local_path": "data/raw/sangraha_hindi/wiki_hin_Deva_0000_of_0063.parquet",
+    "notes": "Sangraha synthetic Hindi Devanagari shard"
+  },
+  {
+    "name": "PHINC Hinglish",
+    "url": "https://huggingface.co/datasets/LingoIITGN/PHINC/resolve/main/PHINC.csv",
+    "license": "CC BY 4.0",
+    "download_date": "2026-10-24",
+    "local_path": "data/raw/phinc/PHINC.csv",
+    "notes": "PHINC Hinglish source file"
+  }
+]
